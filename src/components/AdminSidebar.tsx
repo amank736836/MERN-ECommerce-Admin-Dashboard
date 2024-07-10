@@ -41,6 +41,23 @@ const AdminSidebar = () => {
     },
   ];
 
+  const sidebar2 = [
+    {
+      name: "Bar Chart",
+      icon: FaChartBar,
+      url: "/admin/chart/bar",
+    },
+    {
+      name: "Pie Chart",
+      icon: FaChartPie,
+      url: "/admin/chart/pie",
+    },
+    {
+      name: "Line Chart",
+      icon: FaChartLine,
+      url: "/admin/chart/line",
+    },
+  ];
 
 
   return (
@@ -60,6 +77,21 @@ const AdminSidebar = () => {
           ))}
         </ul>
       </div>
+      <div>
+        <h5>Charts</h5>
+        <ul>
+          {sidebar2.map((item, index) => (
+            <Li
+              key={index}
+              url={item.url}
+              text={item.name}
+              location={location}
+              Icon={item.icon}
+            />
+          ))}
+        </ul>
+      </div>
+     
     </aside>
   );
 };
