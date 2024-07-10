@@ -1,11 +1,13 @@
 import { BsSearch } from "react-icons/bs";
 import AdminSidebar from "../components/AdminSidebar";
 import { FaRegBell } from "react-icons/fa";
-import userImg from "../assets/userpic.png";
+import userImg from "../assets/userPic.png";
 import WidgetItem from "./dashboard/WidgetItem";
-const Dashboard = () => {
+import CategoryItem from "./dashboard/CategoryItem";
+import { categories as categoryItems } from "../assets/data.json";
 
-  const items = [
+const Dashboard = () => {
+  const widgetItems = [
     {
       percent: 40,
       amount: true,
@@ -44,7 +46,7 @@ const Dashboard = () => {
           <img src={userImg} alt="User" />
         </div>
         <section className="widgetContainer">
-          {items.map((item, index) => (
+          {widgetItems.map((item, index) => (
             <WidgetItem
               key={index}
               heading={item.heading}
@@ -54,6 +56,29 @@ const Dashboard = () => {
               color={item.color}
             />
           ))}
+        </section>
+
+        <section className="graphContainer">
+          <div className="revenueChart">
+            <h2>Revenue & Transaction</h2>
+          </div>
+          <div className="dashboardCategories">
+            <h2>Inventory</h2>
+            <div>
+              {categoryItems.map((item, index) => (
+                <CategoryItem
+                  key={index}
+                  heading={item.heading}
+                  value={item.value}
+                  color={`hsl(
+                    ${item.value * 4}
+                    ,${item.value}%
+                    ,50%
+                    )`}
+                />
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </div>
