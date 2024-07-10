@@ -13,7 +13,7 @@ import {
   RiShoppingBag3Fill,
 } from "react-icons/ri";
 import { useLocation } from "react-router-dom";
-import Li from "./AdminSidebar/Li";
+import Li from "./Li";
 
 const AdminSidebar = () => {
   const location = useLocation();
