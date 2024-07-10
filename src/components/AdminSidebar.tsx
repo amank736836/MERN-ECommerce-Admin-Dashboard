@@ -59,6 +59,23 @@ const AdminSidebar = () => {
     },
   ];
 
+  const sidebar3 = [
+    {
+      name: "Stopwatch",
+      icon: FaStopwatch,
+      url: "/admin/app/stopwatch",
+    },
+    {
+      name: "Coupon",
+      icon: RiCoupon3Fill,
+      url: "/admin/app/coupon",
+    },
+    {
+      name: "Toss",
+      icon: FaGamepad,
+      url: "/admin/app/gamepad",
+    },
+  ];
 
   return (
     <aside>
@@ -91,7 +108,20 @@ const AdminSidebar = () => {
           ))}
         </ul>
       </div>
-     
+      <div>
+        <h5>Apps</h5>
+        <ul>
+          {sidebar3.map((item, index) => (
+            <Li
+              key={index}
+              url={item.url}
+              text={item.name}
+              location={location}
+              Icon={item.icon}
+            />
+          ))}
+        </ul>
+      </div>
     </aside>
   );
 };
