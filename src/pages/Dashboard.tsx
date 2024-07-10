@@ -1,10 +1,11 @@
 import { BsSearch } from "react-icons/bs";
-import AdminSidebar from "../components/AdminSidebar";
+import AdminSidebar from "../components/AdminSidebar/AdminSidebar";
 import { FaRegBell } from "react-icons/fa";
 import userImg from "../assets/userPic.png";
 import WidgetItem from "./dashboard/WidgetItem";
 import CategoryItem from "./dashboard/CategoryItem";
 import { categories as categoryItems } from "../assets/data.json";
+import { BarChart } from "../components/Charts/Charts";
 
 const Dashboard = () => {
   const widgetItems = [
@@ -61,6 +62,14 @@ const Dashboard = () => {
         <section className="graphContainer">
           <div className="revenueChart">
             <h2>Revenue & Transaction</h2>
+            <BarChart 
+            data_1={[200,444,343,556,778,455,990]}
+            data_2={[300,144,433,655,237,755,190]}
+            title_1="Revenue"
+            title_2="Transaction"
+            bgColor_1="rgb(0,115,255)"
+            bgColor_2="rgba(53,162,235,0.8)"
+            />
           </div>
           <div className="dashboardCategories">
             <h2>Inventory</h2>
