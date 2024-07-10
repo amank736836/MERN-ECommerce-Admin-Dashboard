@@ -18,7 +18,7 @@ import Li from "./AdminSidebar/Li";
 const AdminSidebar = () => {
   const location = useLocation();
 
-  const sidebar1 = [
+  const dashboard = [
     {
       name: "Dashboard",
       icon: RiDatabaseFill,
@@ -41,7 +41,7 @@ const AdminSidebar = () => {
     },
   ];
 
-  const sidebar2 = [
+  const charts = [
     {
       name: "Bar Chart",
       icon: FaChartBar,
@@ -59,7 +59,7 @@ const AdminSidebar = () => {
     },
   ];
 
-  const sidebar3 = [
+  const apps = [
     {
       name: "Stopwatch",
       icon: FaStopwatch,
@@ -83,7 +83,7 @@ const AdminSidebar = () => {
       <div>
         <h5>Dashboard</h5>
         <ul>
-          {sidebar1.map((item, index) => (
+          {dashboard.map((item, index) => (
             <Li
               key={index}
               url={item.url}
@@ -97,7 +97,7 @@ const AdminSidebar = () => {
       <div>
         <h5>Charts</h5>
         <ul>
-          {sidebar2.map((item, index) => (
+          {charts.map((item, index) => (
             <Li
               key={index}
               url={item.url}
@@ -111,7 +111,7 @@ const AdminSidebar = () => {
       <div>
         <h5>Apps</h5>
         <ul>
-          {sidebar3.map((item, index) => (
+          {apps.map((item, index) => (
             <Li
               key={index}
               url={item.url}
