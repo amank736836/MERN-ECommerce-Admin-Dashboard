@@ -1,11 +1,15 @@
-import { BsSearch } from "react-icons/bs";
 import AdminSidebar from "../components/AdminSidebar/AdminSidebar";
-import { FaRegBell } from "react-icons/fa";
+import { BarChart, DoughnutChart } from "../components/Charts/Charts";
+
 import userImg from "../assets/userPic.png";
+import { categories as categoryItems } from "../assets/data.json";
+
 import WidgetItem from "./dashboard/WidgetItem";
 import CategoryItem from "./dashboard/CategoryItem";
-import { categories as categoryItems } from "../assets/data.json";
-import { BarChart } from "../components/Charts/Charts";
+
+import { BsSearch } from "react-icons/bs";
+import { FaRegBell } from "react-icons/fa";
+import { BiMaleFemale } from "react-icons/bi";
 
 const Dashboard = () => {
   const widgetItems = [
@@ -62,13 +66,13 @@ const Dashboard = () => {
         <section className="graphContainer">
           <div className="revenueChart">
             <h2>Revenue & Transaction</h2>
-            <BarChart 
-            data_1={[200,444,343,556,778,455,990]}
-            data_2={[300,144,433,655,237,755,190]}
-            title_1="Revenue"
-            title_2="Transaction"
-            bgColor_1="rgb(0,115,255)"
-            bgColor_2="rgba(53,162,235,0.8)"
+            <BarChart
+              data_1={[200, 444, 343, 556, 778, 455, 990]}
+              data_2={[300, 144, 433, 655, 237, 755, 190]}
+              title_1="Revenue"
+              title_2="Transaction"
+              bgColor_1="rgb(0,115,255)"
+              bgColor_2="rgba(53,162,235,0.8)"
             />
           </div>
           <div className="dashboardCategories">
@@ -87,6 +91,20 @@ const Dashboard = () => {
                 />
               ))}
             </div>
+          </div>
+        </section>
+        <section className="transactionContainer">
+          <div className="genderChart">
+            <h2>Gender Ratio</h2>
+            <DoughnutChart
+              labels={["Female", "Male"]}
+              data={[12, 19]}
+              backgroundColor={["hsl(340,82%,56%)", "rgba(53,162,235,0.8)"]}
+              cutout={90}
+            />
+            <p>
+              <BiMaleFemale />
+            </p>
           </div>
         </section>
       </main>
