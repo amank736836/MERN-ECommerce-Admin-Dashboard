@@ -89,35 +89,63 @@
         text-align: center;
       }
 
-      >div{
+      > div {
         overflow-y: auto;
         padding-left: 0.5rem;
-      }    
-      
-      .categoryItem{
+      }
+
+      .categoryItem {
         width: 100%;
-        @include flex(row , space-between);
+        @include flex(row, space-between);
         padding: 1rem;
-        > h5{
+        > h5 {
           letter-spacing: 1px;
           font-weight: 300;
         }
 
-        >div{
+        > div {
           margin-left: auto;
           width: 6rem;
           background-color: rgb(217, 217, 217);
           border-radius: 20px;
           height: 0.5rem;
           flex: none;
-          >div{
+          > div {
             height: 100%;
           }
         }
-        > span{
+        > span {
           font-size: 0.8rem;
           font-weight: 700;
         }
+      }
+    }
+  }
+  .transactionContainer {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem 2rem 0;
+    height: 30rem;
+    > div {
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.132);
+      border-radius: 10px;
+    }
+
+    .genderChart {
+      width: 100%;
+      max-width: 20rem;
+      padding: 1rem;
+      position: relative;
+      > h2 {
+        text-align: center;
+        margin: 1.5rem 0 2rem 0;
+        @include heading;
+      }
+      > p {
+        @include posCenter;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.634);
       }
     }
   }
