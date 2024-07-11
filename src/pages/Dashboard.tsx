@@ -2,14 +2,18 @@ import AdminSidebar from "../components/AdminSidebar/AdminSidebar";
 import { BarChart, DoughnutChart } from "../components/Charts/Charts";
 
 import userImg from "../assets/userPic.png";
-import { categories as categoryItems } from "../assets/data.json";
+import {
+  categories as categoryItems,
+  transactions as transactionItems,
+} from "../assets/data.json";
 
-import WidgetItem from "./dashboard/WidgetItem";
-import CategoryItem from "./dashboard/CategoryItem";
+import WidgetItem from "../components/DashboardItems/WidgetItem";
+import CategoryItem from "../components/DashboardItems/CategoryItem";
 
 import { BsSearch } from "react-icons/bs";
 import { FaRegBell } from "react-icons/fa";
 import { BiMaleFemale } from "react-icons/bi";
+import Table from "../components/DashboardTable/DashboardTable";
 
 const Dashboard = () => {
   const widgetItems = [
@@ -106,6 +110,8 @@ const Dashboard = () => {
               <BiMaleFemale />
             </p>
           </div>
+
+          <Table data={transactionItems} />
         </section>
       </main>
     </div>
