@@ -6,6 +6,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  ArcElement,
 } from "chart.js";
 
 ChartJS.register(
@@ -14,7 +15,9 @@ ChartJS.register(
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  ArcElement
 );
 
 export { BarChart } from "./BarChart";
+export { DoughnutChart } from "./DoughnutChart";
