@@ -5,44 +5,18 @@ import userImg from "../assets/userPic.png";
 import {
   categories as categoryItems,
   transactions as transactionItems,
-} from "../assets/data.json";
+  widgets as widgetItems,
+} from "../assets/dashboard.json";
 
 import WidgetItem from "../components/DashboardItems/WidgetItem";
 import CategoryItem from "../components/DashboardItems/CategoryItem";
+import Table from "../components/Tables/DashboardTable";
 
 import { BsSearch } from "react-icons/bs";
 import { FaRegBell } from "react-icons/fa";
 import { BiMaleFemale } from "react-icons/bi";
-import Table from "../components/DashboardTable/DashboardTable";
 
 const Dashboard = () => {
-  const widgetItems = [
-    {
-      percent: 40,
-      amount: true,
-      value: 340000,
-      heading: "Revenue",
-      color: "rgb(0,115,255)",
-    },
-    {
-      percent: -14,
-      value: 400,
-      heading: "Users",
-      color: "rgb(0,198,202)",
-    },
-    {
-      percent: 80,
-      value: 23000,
-      heading: "Transaction",
-      color: "rgb(255,196,0)",
-    },
-    {
-      percent: 30,
-      value: 1000,
-      heading: "Products",
-      color: "rgb(76,0,255)",
-    },
-  ];
 
   return (
     <div className="adminContainer">
