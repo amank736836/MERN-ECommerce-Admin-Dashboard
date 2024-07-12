@@ -90,12 +90,21 @@ function TableHOC<T extends object>(
 
         {showPagination && (
           <div className="tablePagination">
+            <button onClick={() => gotoPage(0)} disabled={pageIndex === 0}>
+              First Page
+            </button>
             <button disabled={!canPreviousPage} onClick={previousPage}>
               Prev
             </button>
             <span>{`${pageIndex + 1} of ${pageCount}`}</span>
             <button disabled={!canNextPage} onClick={nextPage}>
               Next
+            </button>
+            <button
+              onClick={() => gotoPage(pageCount - 1)}
+              disabled={pageIndex === pageCount - 1}
+            >
+              Last Page
             </button>
           </div>
         )}
