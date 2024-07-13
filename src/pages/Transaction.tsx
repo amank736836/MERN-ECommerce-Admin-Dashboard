@@ -13,7 +13,7 @@ const arr: TransactionDataType[] = [
     discount: 400,
     quantity: 3,
     status: <span className="red">Processing</span>,
-    action: <Link to="/admin/transaction/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/transaction/sdkdjbsdjk">Manage</Link>,
   },
   {
     user: "Xavirors",
@@ -21,7 +21,7 @@ const arr: TransactionDataType[] = [
     discount: 450,
     quantity: 6,
     status: <span className="green">Shipped</span>,
-    action: <Link to="/admin/transaction/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/transaction/sdkdjbsdjk">Manage</Link>,
   },
   {
     user: "Xavirors",
@@ -29,7 +29,7 @@ const arr: TransactionDataType[] = [
     discount: 400,
     quantity: 5,
     status: <span className="purple">Delivered</span>,
-    action: <Link to="/admin/transaction/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/transaction/sdkdjbsdjk">Manage</Link>,
   },
 ];
 
