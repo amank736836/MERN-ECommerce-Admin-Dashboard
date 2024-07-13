@@ -45,7 +45,7 @@ const Product = () => {
       <main>
         <ProductTable data={products} />
       </main>
-      <Link to="/admin/product/new" className="createProductBtn">
+      <Link to="/admin/product/add" className="createProductBtn">
         <FaPlus />
       </Link>
     </div>
