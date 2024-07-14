@@ -6,7 +6,7 @@ import {
   categories as categoryItems,
   transactions as transactionItems,
   widgets as widgetItems,
-} from "../assets/dashboard.json";
+} from "../assets/data.json";
 
 import WidgetItem from "../components/DashboardItems/WidgetItem";
 import CategoryItem from "../components/DashboardItems/CategoryItem";
