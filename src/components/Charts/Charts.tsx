@@ -7,6 +7,9 @@ import {
   Tooltip,
   Legend,
   ArcElement,
+  PointElement,
+  LineElement,
+  Filler,
 } from "chart.js";
 
 ChartJS.register(
@@ -16,8 +19,13 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
+  PointElement,
+  LineElement,
+  Filler
 );
 
 export { BarChart } from "./BarChart";
 export { DoughnutChart } from "./DoughnutChart";
+export { PieChart } from "./PieChart";
+export { LineChart } from "./LineChart";
