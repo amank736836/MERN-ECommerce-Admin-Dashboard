@@ -23,6 +23,7 @@ const arr: CustomerDataType[] = [
     role: "user",
     action: (
       <button>
+        Del
         <FaTrash />
       </button>
     ),
@@ -43,6 +44,7 @@ const arr: CustomerDataType[] = [
     role: "user",
     action: (
       <button>
+        Del
         <FaTrash />
       </button>
     ),
