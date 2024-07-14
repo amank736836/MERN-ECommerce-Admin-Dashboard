@@ -1,3 +1,7 @@
+## Deployed at: https://mern-e-commerce-admin-dashboard.vercel.app/
+## Deployed at: https://mern-ecommerce-admin-dashboard.onrender.com/
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
