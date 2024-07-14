@@ -73,7 +73,7 @@ const AdminSidebar = () => {
     {
       name: "Toss",
       icon: FaGamepad,
-      url: "/admin/app/gamepad",
+      url: "/admin/app/toss",
     },
   ];
 
